@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="Theme.TravelsMap" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_de_france</item>
+        <item name="colorSecondaryVariant">@color/boeing_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="bottomSheetDialogTheme">@style/Theme.CurrencyConverter.BottomSheetDialog</item>
+
+        <item name="toolbarStyle">@style/Theme.TravelsMap.ToolbarStyle</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <style name="Theme.TravelsMap.ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+    </style>
+
+    <style name="Theme.CurrencyConverter.BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Design.BottomSheet.Modal</item>
+    </style>
+</resources>

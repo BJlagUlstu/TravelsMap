@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_rate_and_review"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:text="@string/title_share_your_experience"
+        android:textSize="16sp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/add_review_chip"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_gravity="start"
+        android:text="@string/title_add_review"
+        app:chipEndPadding="8dp"
+        app:chipIcon="@drawable/ic_outline_rate_review_24"
+        app:chipStartPadding="8dp" />
+
+</LinearLayout>

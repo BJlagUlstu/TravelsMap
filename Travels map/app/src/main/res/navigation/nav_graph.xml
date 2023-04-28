@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/loginFragment">
+
+    <fragment
+        android:id="@+id/navigation_explore"
+        android:name="com.example.travels_map.presentation.explore.ExploreFragment"
+        android:label="@string/title_explore"
+        tools:layout="@layout/fragment_explore">
+        <action
+            android:id="@+id/action_navigation_explore_to_addToListFragment"
+            app:destination="@id/addToListFragment" />
+        <action
+            android:id="@+id/action_navigation_explore_to_manageTitleFragment"
+            app:destination="@id/manageTitleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_saved"
+        android:name="com.example.travels_map.presentation.place_type_list.PlaceTypeFragment"
+        android:label="@string/title_saved"
+        tools:layout="@layout/fragment_place_type_list">
+        <action
+            android:id="@+id/action_navigation_saved_to_editLocationListFragment"
+            app:destination="@id/editLocationListFragment" />
+        <action
+            android:id="@+id/action_navigation_saved_to_manageTitleFragment"
+            app:destination="@id/manageTitleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_group"
+        android:name="com.example.travels_map.presentation.group.GroupFragment"
+        android:label="@string/title_group"
+        tools:layout="@layout/fragment_group">
+        <action
+            android:id="@+id/action_navigation_group_to_manageGroupBottomSheetFragment"
+            app:destination="@id/selectGroupSwitchingOptionBottomSheetFragment" />
+        <action
+            android:id="@+id/action_navigation_group_to_selectedGroupErrorFragment"
+            app:destination="@id/selectedGroupErrorFragment" />
+        <action
+            android:id="@+id/action_navigation_group_to_addParticipantFragment"
+            app:destination="@id/addParticipantFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.example.travels_map.presentation.account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account">
+        <action
+            android:id="@+id/action_navigation_account_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+        <action
+            android:id="@+id/action_navigation_account_to_permissionsFragment"
+            app:destination="@id/permissionsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addParticipantFragment"
+        android:name="com.example.travels_map.presentation.group.add_participant.AddParticipantFragment"
+        android:label="Добавить участника"
+        tools:layout="@layout/fragment_add_participant" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.travels_map.presentation.account.change_password.ChangePasswordFragment"
+        android:label="Изменить пароль"
+        tools:layout="@layout/fragment_change_password" />
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.travels_map.presentation.account.edit_profile.EditProfileFragment"
+        android:label="Редактировать профиль"
+        tools:layout="@layout/fragment_edit_profile" />
+
+    <fragment
+        android:id="@+id/findGroupFragment"
+        android:name="com.example.travels_map.presentation.group.find.FindGroupFragment"
+        android:label="Найти группу"
+        tools:layout="@layout/fragment_find_group" />
+
+    <fragment
+        android:id="@+id/groupListFragment"
+        android:name="com.example.travels_map.presentation.group.list.GroupListFragment"
+        android:label="Список групп"
+        tools:layout="@layout/fragment_group_list" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.travels_map.presentation.login.LoginFragment"
+        android:label="Авторизация"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_explore"
+            app:destination="@id/navigation_explore" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/selectGroupSwitchingOptionBottomSheetFragment"
+        android:name="com.example.travels_map.presentation.group.select_switching_option.SelectGroupSwitchingOptionBottomSheetFragment"
+        android:label="Управление группой"
+        tools:layout="@layout/fragment_select_group_switching_option_bottom_sheet">
+        <action
+            android:id="@+id/action_selectGroupSwitchingOptionBottomSheetFragment_to_findGroupFragment"
+            app:destination="@id/findGroupFragment" />
+        <action
+            android:id="@+id/action_selectGroupSwitchingOptionBottomSheetFragment_to_groupListFragment"
+            app:destination="@id/groupListFragment" />
+        <action
+            android:id="@+id/action_selectGroupSwitchingOptionBottomSheetFragment_to_manageTitleFragment"
+            app:destination="@id/manageTitleFragment" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/manageTitleFragment"
+        android:name="com.example.travels_map.presentation.manage_title.ManageTitleFragment"
+        android:label="Управление заголовком"
+        tools:layout="@layout/fragment_manage_title">
+        <argument
+            android:name="request_key"
+            app:argType="string" />
+        <argument
+            android:name="bundle_key"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/permissionsFragment"
+        android:name="com.example.travels_map.presentation.account.permissions.PermissionsFragment"
+        android:label="Разрешения"
+        tools:layout="@layout/fragment_permissions" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.travels_map.presentation.register.RegisterFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_navigation_explore"
+            app:destination="@id/navigation_explore" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/selectedGroupErrorFragment"
+        android:name="com.example.travels_map.presentation.group.selected_group_error.SelectedGroupErrorFragment"
+        android:label="Ошибка выбранной группы"
+        tools:layout="@layout/fragment_selected_group_error">
+        <action
+            android:id="@+id/action_selectedGroupErrorFragment_to_findGroupFragment"
+            app:destination="@id/findGroupFragment" />
+        <action
+            android:id="@+id/action_selectedGroupErrorFragment_to_manageTitleFragment"
+            app:destination="@id/manageTitleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editLocationListFragment"
+        android:name="com.example.travels_map.presentation.place_type_list.edit_place_list.EditPlaceListFragment"
+        android:label="Изменить список"
+        tools:layout="@layout/fragment_edit_place_list" />
+
+    <fragment
+        android:id="@+id/addToListFragment"
+        android:name="com.example.travels_map.presentation.add_to_list.AddToListFragment"
+        android:label="Добавить в список"
+        tools:layout="@layout/fragment_add_to_list" />
+
+</navigation>

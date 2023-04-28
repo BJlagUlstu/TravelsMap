@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Travels map</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="back4app_app_id">1aHjPxKjeEifeLiAiw19jwiGFYgAHiGvwKcTGJvX</string>
+    <string name="back4app_client_key">8018MGH5RYwaULwh2qgfmwkf6HVeIBzjFa7wZboX</string>
+
+    <string name="yandex_api_key">662956ca-2cd6-4413-8d27-343b958b5460</string>
+
+    <string name="title">Заголовок</string>
+
+    <!-- Strings related to navigation menu -->
+    <string name="title_explore">Исследовать</string>
+    <string name="title_saved">Сохранено</string>
+    <string name="title_account">Аккаунт</string>
+    <string name="title_group">Группа</string>
+
+    <string name="title_name">Имя</string>
+    <string name="title_username">Имя пользователя</string>
+    <string name="title_status">Статус</string>
+    <string name="title_password">Пароль</string>
+    <string name="title_current_password">Текущий пароль</string>
+    <string name="title_new_password">Новый пароль</string>
+    <string name="title_repeat_password">Повторите пароль</string>
+    <string name="title_group_name">Название группы#0000</string>
+
+    <string name="question_no_account">Еще нет аккаунта?</string>
+    <string name="question_have_an_account">Уже есть аккаунт?</string>
+
+    <string name="title_edit_profile_photo">Изменить фото профиля</string>
+    <string name="title_edit_profile">Редактировать профиль</string>
+    <string name="title_change_password">Изменить пароль</string>
+    <string name="title_permissions">Разрешения</string>
+
+    <string name="title_sign_in">Войти</string>
+    <string name="title_sign_up">Зарегистрироваться</string>
+    <string name="title_sign_out">Выйти из аккаунта</string>
+
+    <string name="title_save">Сохранить</string>
+    <string name="title_join_a_group">Вступить в группу</string>
+    <string name="title_join">Присоединиться</string>
+
+    <string name="title_save_login_details">Сохранить данные для входа</string>
+    <string name="save_login_details_description">Данные вашего аккаунта будут сохранены на этом устройстве. В следующий раз вводить их не потребуется.</string>
+
+    <string name="title_allow_display_location">Отображать мое местоположение</string>
+    <string name="allow_display_location_description">Ваше местоположение будет доступно для всех участников групп, в которых вы состоите.</string>
+
+    <string name="title_new_list">Новый список</string>
+    <string name="title_your_lists">Ваши списки</string>
+
+    <string name="more_button_description">Кнопка «Больше информации»</string>
+    <string name="user_avatar_description">Аватар пользователя</string>
+    <string name="remove_button_description">Кнопка «Удалить»</string>
+    <string name="star_rate_description">Изображение звезды рейтинга</string>
+    <string name="place_photo_description">Изображение места</string>
+    <string name="back_button_description">Кнопка «Назад»</string>
+    <string name="list_icon_description">Изображение списка</string>
+
+    <string name="title_add_participant">Добавить участника</string>
+    <string name="title_switch_group">Сменить группу</string>
+
+    <string name="title_share">Поделиться</string>
+    <string name="title_copy_identifier">Скопировать индентификатор</string>
+
+    <string name="title_add_group">Создать группу</string>
+    <string name="title_find_group">Найти группу</string>
+    <string name="title_select_group">Выбрать группу</string>
+    <string name="title_exit_the_group">Выйти из группы</string>
+
+    <string name="query_hint">Идентификатор группы</string>
+
+    <string name="title_your_groups">Ваши группы</string>
+
+    <string name="title_invite_participant">Вы можете пригласить любого человека в группу, поделившись с ним идентификатором, указанным ниже, который необходимо вставить в поле поиска.</string>
+    <string name="title_selected_group_error">К сожалению, вы не состоите ни в одной группе, однако вам доступны следующие действия:</string>
+
+    <string name="title_route">Маршрут</string>
+    <string name="title_shortcut">Ярлык</string>
+    <string name="title_add_photo">Добавить фото</string>
+    <string name="title_add_note">Добавить заметку</string>
+
+    <string name="title_overview">Обзор</string>
+    <string name="title_reviews">Отзывы</string>
+    <string name="title_photo">Фото</string>
+
+    <string name="title_show_all">Показать все</string>
+    <string name="title_show_reviews">Показать отзывы</string>
+
+    <string name="title_all">Все</string>
+    <string name="title_average_rating">Средняя оценка</string>
+    <string name="title_rate_and_review">Оценка и отзыв</string>
+    <string name="title_share_your_experience">Оставьте отзыв, чтобы помочь другим пользователям</string>
+
+    <string name="title_add_review">Добавить отзыв</string>
+
+    <string name="title_add_to_list">Добавить в список</string>
+    <string name="title_list_name">Название списка</string>
+
+    <string name="title_done">Готово</string>
+    <string name="title_create_list">Создать список</string>
+
+    <string name="title_custom_name">Пользовательское название</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="not_found_error_message">Not found</string>
+    <string name="network_error_message">Network error</string>
+    <string name="remote_error_message">Remote server error</string>
+    <string name="unknown_error_message">Unknown error</string>
+
+    <string name="title_edit_list">Изменить список</string>
+    <string name="title_delete_list">Удалить список</string>
+
+    <string name="title_no_name">Без названия</string>
+</resources>

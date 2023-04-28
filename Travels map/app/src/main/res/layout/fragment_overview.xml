@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/places_list_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="3"
+            tools:listitem="@layout/saved_place_type_layout" />
+
+        <include layout="@layout/separator_layout" />
+
+        <TextView
+            android:id="@+id/textView_coordinates"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawablePadding="16dp"
+            android:gravity="center_vertical"
+            android:text="48.0, 54.0"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:drawableStartCompat="@drawable/ic_baseline_location_24" />
+
+        <include layout="@layout/separator_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingVertical="8dp">
+
+            <include layout="@layout/average_rating_layout" />
+
+            <include layout="@layout/review_layout" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/show_all_reviews_chip"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_gravity="start"
+                android:text="@string/title_show_reviews"
+                app:chipEndPadding="8dp"
+                app:chipIcon="@drawable/ic_baseline_reviews_24"
+                app:chipStartPadding="8dp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/separator_layout" />
+
+        <include layout="@layout/rate_and_review_layout" />
+
+    </LinearLayout>
+
+</ScrollView>

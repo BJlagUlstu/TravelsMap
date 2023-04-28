@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="Theme.TravelsMap" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/blue_de_france</item>
+        <item name="colorSecondaryVariant">@color/boeing_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSurface">@color/black</item>
+        <!-- Status bar color -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here -->
+        <item name="tabStyle">@style/Theme.TravelsMap.TabLayoutStyle</item>
+        <item name="toolbarStyle">@style/Theme.TravelsMap.ToolbarStyle</item>
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+        <item name="bottomSheetStyle">@style/Theme.TravelsMap.BottomSheet</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox</item>
+    </style>
+
+    <style name="Theme.TravelsMap.ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="Theme.TravelsMap.TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">?colorOnPrimary</item>
+        <item name="tabIndicatorColor">?colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.TravelsMap.BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+    </style>
+
+    <style name="Theme.TravelsMap.StandardBottomSheet" parent="">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="android:elevation">8dp</item>
+        <item name="layout_behavior">@string/bottom_sheet_behavior</item>
+    </style>
+</resources>

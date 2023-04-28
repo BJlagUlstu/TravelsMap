@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:drawableStartCompat="@drawable/ic_baseline_person_96"
+        tools:text="Название группы" />
+
+    <include layout="@layout/separator_layout" />
+
+    <TextView
+        android:id="@+id/textView_add_participant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/title_add_participant"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_person_add_24" />
+
+    <TextView
+        android:id="@+id/textView_switch_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/title_switch_group"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_switch_24" />
+
+    <TextView
+        android:id="@+id/textView_exit_the_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:text="@string/title_exit_the_group"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_logout_24" />
+
+    <include layout="@layout/separator_layout" />
+
+    <TextView
+        android:id="@+id/textView_number_of_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_margin="16dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        tools:text="5 участников" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/group_participants_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        tools:listitem="@layout/user_layout" />
+
+</LinearLayout>

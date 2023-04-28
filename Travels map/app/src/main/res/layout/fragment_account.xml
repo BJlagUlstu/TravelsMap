@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView_user_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/user_avatar_description"
+            android:src="@drawable/ic_baseline_person_96"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:text="@string/title_username" />
+
+            <TextView
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="@string/title_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/edit_profile_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:drawableStart="@drawable/ic_baseline_edit_24"
+            android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+            android:text="@string/title_edit_profile" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/change_password_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginVertical="12dp"
+            android:drawableStart="@drawable/ic_baseline_password_24"
+            android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+            android:text="@string/title_change_password" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/permissions_button"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:drawableStart="@drawable/ic_baseline_permissions_24"
+            android:drawableEnd="@drawable/ic_baseline_arrow_right_24"
+            android:text="@string/title_permissions" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_out_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/title_sign_out" />
+
+</FrameLayout>

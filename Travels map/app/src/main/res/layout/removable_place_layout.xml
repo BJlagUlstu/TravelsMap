@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Название" />
+
+        <TextView
+            android:id="@+id/textView_coordinates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="Координаты" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end|center_vertical"
+        android:layout_margin="4dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/remove_button_description"
+        android:src="@drawable/ic_baseline_cancel_24" />
+
+</FrameLayout>
